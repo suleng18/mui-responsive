@@ -10,21 +10,24 @@ import {
   Typography,
 } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import CustomerContext from '../context/CustomerContext';
 
 const Create = () => {
   const [name, setName] = useState('');
-  const [details, setDetails] = useState('');
   const [nameError, setNameError] = useState(false);
+  const [details, setDetails] = useState('');
   const [detailsError, setDetailsError] = useState(false);
   const [gender, setGender] = useState('female');
   const [rating, setRating] = useState(5);
+
+  const { createCustomer } = useContext(CustomerContext);
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
 
     if (name && details && gender && rating) {
-      console.log(name, details, gender, rating);
+      createCustomer({ name, details, gender, rating });
     }
 
     if (name === '') setNameError(true);

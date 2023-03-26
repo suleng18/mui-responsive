@@ -1,28 +1,37 @@
 {
   "customers": [
     {
-      "name": "Suleng",
-      "details": "He is from America",
-      "rating": 5,
-      "id": 1
-    },
-    {
-      "name": "Suleng1",
-      "details": "He is from America",
-      "rating": 3,
-      "id": 2
-    },
-    {
-      "name": "Suleng2",
+      "name": "Cu lengs2",
       "details": "He is from America",
       "rating": 2,
       "id": 3
     },
     {
-      "name": "Suleng3",
+      "name": "Hu leng3",
       "details": "He is from America",
       "rating": 4,
       "id": 4
+    },
+    {
+      "name": "Su keng 4",
+      "details": "hihihi",
+      "gender": "male",
+      "rating": 5,
+      "id": 5
+    },
+    {
+      "name": "Su leng 5",
+      "details": "hihihi",
+      "gender": "male",
+      "rating": 5,
+      "id": 6
+    },
+    {
+      "name": "Su leng 6",
+      "details": "hihihi",
+      "gender": "female",
+      "rating": 5,
+      "id": 7
     }
   ]
 }
